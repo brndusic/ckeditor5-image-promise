@@ -1,5 +1,6 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
+import imageIcon from '@ckeditor/ckeditor5-core/theme/icons/image.svg';
 
 export default class ImagePromise extends Plugin {
     init() {
@@ -11,7 +12,7 @@ export default class ImagePromise extends Plugin {
 
             view.set({
                 label: 'Insert image',
-                // icon: imageIcon,
+                icon: imageIcon,
                 tooltip: true
             });
 
